@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ShouldHave.css";
+import CircularProgress from "@mui/material/CircularProgress";
 
 function ShouldHave () {
 
@@ -8,6 +9,14 @@ function ShouldHave () {
         image_2: true,
         image_3: true
     })
+
+    const handleImageLoad = (imageKey) => {
+        setImageLoading(prevState => ({
+            ...prevState,
+            [imageKey]: true,
+        }));
+    };
+
     return <div className="should-have">
         
         <div className="should-have-1"> 
@@ -18,17 +27,50 @@ function ShouldHave () {
         </div>
         <div className="should-have-2">
             <div>
-                <div>
-                    <img className="image-2" src="../images/image 2.png" alt="" />
+                <div style={{backgroundColor: 'red', position: 'relative', width:'100%', height:'12.5vw'}}>
+                {imageLoading.image_2 && (
+                            <div style={{height:'96%', width:'100%', display: 'flex', alignItems: 'center', justifyContent:'center', position: 'absolute'}}>
+                                <CircularProgress size={80} />
+                            </div>
+                        )}
+                        <img
+                            className="image-2"
+                            src="../images/image 2.png"
+                            alt=""
+                            onLoad={() => handleImageLoad('image_2')}
+                            style={{ display: imageLoading.image_2 ? 'none' : '' }}
+                        />
                 </div>
-                <div style={{marginTop:"9px"}}>
-                    <img className="image-1" src="../images/image 1.png" alt="" />
+                <div style={{marginTop:"9px", display: imageLoading.image_1 ? 'flex' : 'block', justifyContent:'end', position: 'relative', height:'20vw'}}>
+                    {imageLoading.image_1 && (
+                        <div style={{height:'100%', width:'70%',display: 'flex', alignItems: 'center', justifyContent:'center', position: 'absolute'}}>
+                            <CircularProgress size={80} />
+                        </div>
+                    )}
+                    <img
+                        className="image-1"
+                        src="../images/image 1.png"
+                        alt=""
+                        onLoad={() => handleImageLoad('image_1')}
+                        style={{ display: imageLoading.image_1 ? 'none' : '' }}
+                    />
                 </div>
                 
                 
             </div>
             <div>
-                <img className="image-3" src="../images/image 3.png" alt="" />
+            {imageLoading.image_1 && (
+                        <div style={{height:'337px', width: '208px', display: 'flex', alignItems: 'center', justifyContent:'center'}}>
+                            <CircularProgress size={80} />
+                        </div>
+                    )} 
+                    <img
+                        className="image-3"
+                        src="../images/image 3.png"
+                        alt=""
+                        onLoad={() => handleImageLoad('image_3')}
+                        style={{ display: imageLoading.image_3 ? 'none' : '' }}
+                    />
             </div>
             
         </div>

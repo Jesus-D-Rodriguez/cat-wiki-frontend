@@ -10,6 +10,14 @@
   position: relative;
 }
 
+.loading-wrapper-most-searched-cat-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
 .loading-wrapper-2 {
   display: flex;
   justify-content: center;
