@@ -13,7 +13,7 @@ function ShouldHave () {
     const handleImageLoad = (imageKey) => {
         setImageLoading(prevState => ({
             ...prevState,
-            [imageKey]: true,
+            [imageKey]: false,
         }));
     };
 
@@ -27,7 +27,7 @@ function ShouldHave () {
         </div>
         <div className="should-have-2">
             <div>
-                <div style={{backgroundColor: 'red', position: 'relative', width:'100%', height:'12.5vw'}}>
+                <div className="should-have-image-2" >
                 {imageLoading.image_2 && (
                             <div style={{height:'96%', width:'100%', display: 'flex', alignItems: 'center', justifyContent:'center', position: 'absolute'}}>
                                 <CircularProgress size={80} />
@@ -41,7 +41,7 @@ function ShouldHave () {
                             style={{ display: imageLoading.image_2 ? 'none' : '' }}
                         />
                 </div>
-                <div style={{marginTop:"9px", display: imageLoading.image_1 ? 'flex' : 'block', justifyContent:'end', position: 'relative', height:'20vw'}}>
+                <div className="should-have-image-1" style={{display: imageLoading.image_1 ? 'flex' : 'block'}}>
                     {imageLoading.image_1 && (
                         <div style={{height:'100%', width:'70%',display: 'flex', alignItems: 'center', justifyContent:'center', position: 'absolute'}}>
                             <CircularProgress size={80} />
