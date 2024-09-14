@@ -58,9 +58,9 @@ function ShouldHave () {
                 
                 
             </div>
-            <div>
-            {imageLoading.image_1 && (
-                        <div style={{height:'337px', width: '208px', display: 'flex', alignItems: 'center', justifyContent:'center'}}>
+            <div className="should-have-image-3">
+            {imageLoading.image_3 && (
+                        <div style={{height:'100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent:'center'}}>
                             <CircularProgress size={80} />
                         </div>
                     )} 

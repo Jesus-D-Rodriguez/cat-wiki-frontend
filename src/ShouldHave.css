@@ -12,7 +12,6 @@
 }
 
 .should-have-image-2 {
-    background-color: red; 
     position: relative; 
     width: 100%; 
     height: 13vw; 
@@ -21,13 +20,18 @@
 }
 
 .should-have-image-1 {
-    background-color: green;
     margin-top: 9px; 
     justify-content: end; 
     position: relative;
     height: 22.2vw;
     max-height: 417px;
     min-height: 145px;
+}
+
+.should-have-image-3 {
+    max-height: 546px;
+    min-height: 182px;
+    height: 28.5vw;
 }
 
 .should-have-1 {
@@ -226,6 +230,10 @@
 
     .should-have-image-1 {
         height: 43.5vw;
+    }
+
+    .should-have-image-3 {
+        height: 57.5vw;
     }
 }
 

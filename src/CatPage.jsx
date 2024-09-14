@@ -133,7 +133,7 @@ function CatPage (props) {
                 
                 <div className="container-2-photos-row" id="photos-1">
                 {catData.images_1 && (
-                    <div className="img-container wiki" id="right">
+                    <div className="img-container wiki" id="left">
                     {imageLoading.images_1 && ( <div className="loading-wrapper-2">
                                 <CircularProgress size={80}  />
                             </div>)}
@@ -162,7 +162,7 @@ function CatPage (props) {
                     
                     
                     {catData.images_3 && (
-                        <div className="img-container wiki" id="right">
+                        <div className="img-container wiki" id="left">
                         {imageLoading.images_3 && ( <div className="loading-wrapper-2">
                                     <CircularProgress size={80}  />
                                 </div>)}
@@ -192,7 +192,7 @@ function CatPage (props) {
 
 
                     {catData.images_5 && (
-                        <div className="img-container wiki" id="right">
+                        <div className="img-container wiki" id="left">
                         {imageLoading.images_5 && ( <div className="loading-wrapper-2">
                                     <CircularProgress size={80}  />
                                 </div>)}
@@ -220,7 +220,7 @@ function CatPage (props) {
 
             
                     {catData.images_7 && (
-                        <div className="img-container wiki" id="right">
+                        <div className="img-container wiki" id="left">
                         {imageLoading.images_7 && ( <div className="loading-wrapper-2">
                                     <CircularProgress size={80}  />
                                 </div>)}

@@ -421,13 +421,21 @@
   display: none;
 }
 
-#container-cat-page {
+/*#container-cat-page {
   min-height: 2550px;
+}*/
+
+#container-cat-page {
+  min-height: 3000px;
 }
 
+
 #photos-2 {
-  height: 35vh;
-  min-height: 492px;
+  /*height: 35vh;
+  min-height: 492px;*/
+  height: 40vh;
+  min-height: 590px;
+  margin-top: 5%;
 }
 
 #photos-1{
@@ -451,8 +459,12 @@
 }
 
 
-#container-cat-page {
+/*#container-cat-page {
   min-height: 2450px;
+}*/
+
+#container-cat-page {
+  min-height: 2800px;
 }
   
 }
@@ -469,6 +481,7 @@
 }
 
 
+
 }
 
 @media (max-width: 640px) {
@@ -483,16 +496,17 @@
     height: 220px;
   }
   
-  #container-cat-page {
+  /*#container-cat-page {
     min-height: 2350px;
-}
-
-#photos-1 {
-  min-height: 565px;
-}
+  }*/
 
 #container-cat-page {
-  min-height: 2250px;
+  min-height: 2600px;
+}
+
+
+#photos-1, #photos-2 {
+  min-height: 565px;
 }
 
 
@@ -510,8 +524,16 @@
   }
 
 
-  #container-cat-page {
+  /*#container-cat-page {
     min-height: 2150px;
+  }*/
+
+  /*#container-cat-page {
+    min-height: 2600px;
+  }*/
+
+  #container-cat-page {
+    min-height: 2400px;
   }
 
   #photos-1 {
@@ -535,7 +557,7 @@
 }
 
 #container-cat-page {
-  min-height: 2050px;
+  min-height: 2650px;
 }
 
 .container-2-photos-row {
@@ -565,7 +587,7 @@
 }
 
 #container-cat-page {
-  min-height: 1900px;
+  min-height: 2500px;
 }
 
 
@@ -583,7 +605,7 @@
 
 @media(max-widtH: 480px) {
   #container-cat-page {
-    min-height: 1850px;
+    min-height: 2400px;
 }
 
 #photos-1 {
@@ -654,8 +676,8 @@
 
 @media(max-width: 445px) {
   #photos-2 {
-    height: 35vh;
-    min-height: 340px;
+    height: 40vh;
+    min-height: 420px;
 }
 
 #photos-1 {
@@ -681,6 +703,10 @@ width: 165px;
   width: 38px;
 }
 
+
+  #container-cat-page {
+    min-height: 2250px;
+  }
 }
 
 
@@ -690,9 +716,13 @@ width: 165px;
 }
 
 
-#container-cat-page {
+/*#container-cat-page {
   min-height: 1775px;
-}
+}*/
+
+/*#container-cat-page {
+  min-height: 2050px;
+}*/
 
 #photos-1 {
   min-height: 392px;
@@ -733,9 +763,9 @@ width: 165px;
   min-height: 360px;
 }
 
-#container-cat-page {
-  min-height: 1715px;
+/*#container-cat-page {
+  min-height: 1950px;
 }
-
+*/
 }
 
