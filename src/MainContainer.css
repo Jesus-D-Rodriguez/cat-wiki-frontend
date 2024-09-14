@@ -9,6 +9,14 @@
     height: 75%;
 }
 
+.loading-wrapper-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+
 .main-cat-container-img {
     background-image: url("../images/HeroImagelg.png");
     background-size: 100% 100%;
@@ -475,6 +483,10 @@
         grid-template-rows: 20% 80%;
       }
 
+      .loading-wrapper-main {
+        height: 250px;
+        width: 250px;
+      }
       .inside-cat-container-img-1 {
         height: 80%;
       }
@@ -564,6 +576,11 @@
         width: 220px;
     }
 
+    .loading-wrapper-main {
+        height: 220px;
+        width: 220px;
+    }
+
     #first-image {
         height: 220px;
         width: 220px;
@@ -577,6 +594,11 @@
 
 @media (max-width: 585px) {
     .img-container img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .loading-wrapper-main {
         height: 200px;
         width: 200px;
     }
@@ -610,6 +632,11 @@
         width: 180px;
     }
 
+    .loading-wrapper-main {
+        height: 180px;
+        width: 180px;
+    }
+
     #first-image {
         height: 180px;
         width: 180px;
@@ -630,6 +657,11 @@
 
 @media (max-width: 460px) {
     .img-container img {
+        height: 160px;
+        width: 160px;
+    }
+
+    .loading-wrapper-main {
         height: 160px;
         width: 160px;
     }
@@ -672,6 +704,11 @@
         width: 140px;
     }
 
+    .loading-wrapper-main {
+        height: 140px;
+        width: 140px;
+    }
+
     #first-image {
         height: 140px;
         width: 140px;
@@ -694,6 +731,11 @@
 
 @media (max-width: 355px) {
     .img-container img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .loading-wrapper-main {
         height: 120px;
         width: 120px;
     }
