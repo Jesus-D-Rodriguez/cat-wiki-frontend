@@ -12,7 +12,7 @@ function MainContainer () {
         image_1: true,
         image_2: true, 
         image_3: true,
-        image_4: true
+        image_4: true,
     });
 
     const handleImageLoad = (imageKey) => {

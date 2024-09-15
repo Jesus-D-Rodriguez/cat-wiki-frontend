@@ -3,6 +3,7 @@ import Top from "./Top"
 import Bottom from "./Bottom";
 import "./MostSearched.css";
 import axios from "axios";
+import { CircularProgress } from "@mui/material";
 
 
 
@@ -20,7 +21,28 @@ function MostSearched() {
 
     }, []) 
     
-    const [mostSearchedCats, setMostSearchedCats] = useState([])
+    const [mostSearchedCats, setMostSearchedCats] = useState([]);
+    const [loading, setLoading] = useState([
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+    ]);
+
+    const handleImageLoad = (index) => {
+        setLoading((prevLoading) => {
+            const newLoading = [...prevLoading];
+            newLoading[index] = false;
+            return newLoading;
+        })
+    }
+
     const local = 'http://localhost:3000/most_searched';
     const url = 'https://cat-wiki-api-8m0t.onrender.com/most_searched'
     useEffect(()=>{
@@ -48,9 +70,13 @@ function MostSearched() {
                     
                     <div className="most-searched-container">
                     <div className="img-container searched" id="searched">
-                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[0].image_url} alt="" />
-
-                        
+                        {loading[0] && (<div className="loading-wrapper">
+                            <CircularProgress size={80}/>
+                        </div>)}
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[0].image_url} 
+                        alt=""
+                        style = {{display: loading[0] ? 'none' : ''}}
+                        onLoad={() => handleImageLoad(0)}  />
                     </div>
                         <div className="most-searched-text-container">
                            <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[0].name}`}> <h2>1. {mostSearchedCats.length > 0 && mostSearchedCats[0].name}</h2> </a>
@@ -61,7 +87,13 @@ function MostSearched() {
 
                     <div className="most-searched-container">
                     <div className="img-container searched" >
-                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[1].image_url} alt="" />
+                        {loading[1] && (<div className="loading-wrapper">
+                            <CircularProgress size={80}/>
+                        </div>)}
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[1].image_url} 
+                        style = {{display: loading[1] ? 'none' : ''}}
+                        onLoad={() => handleImageLoad(1)}  
+                        alt="" />
 
                         
                     </div>
@@ -74,7 +106,14 @@ function MostSearched() {
 
                     <div className="most-searched-container">
                     <div className="img-container searched" >
-                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[2].image_url} alt="" />
+
+                        {loading[2] && (<div className="loading-wrapper">
+                            <CircularProgress size={80}/>
+                        </div>)}
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[2].image_url} 
+                        style = {{display: loading[2] ? 'none' : ''}}
+                        onLoad={() => handleImageLoad(2)} 
+                        alt="" />
 
                         
                     </div>
@@ -88,7 +127,13 @@ function MostSearched() {
 
                     <div className="most-searched-container">
                     <div className="img-container searched" >
-                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[3].image_url} alt="" />
+                        {loading[3] && (<div className="loading-wrapper">
+                            <CircularProgress size = {80}/>
+                        </div>)}
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[3].image_url} 
+                        style = {{display: loading[3] ? 'none' : ''}}
+                        onLoad={() => handleImageLoad(3)} 
+                        alt="" />
 
                         
                     </div>
@@ -101,7 +146,13 @@ function MostSearched() {
 
                     <div className="most-searched-container">
                     <div className="img-container searched" >
-                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[4].image_url} alt="" />
+                        {loading[4] && (<div className="loading-wrapper">
+                            <CircularProgress size = {80}/>
+                        </div>)}
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[4].image_url} 
+                        style = {{display: loading[4] ? 'none' : ''}}
+                        onLoad={() => handleImageLoad(4)} 
+                        alt="" />
 
                         
                     </div>
@@ -114,7 +165,13 @@ function MostSearched() {
 
                     <div className="most-searched-container">
                     <div className="img-container searched" >
-                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[5].image_url} alt="" />
+                        {loading[5] && (<div className="loading-wrapper">
+                            <CircularProgress size = {80}/>
+                        </div>)}
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[5].image_url} 
+                        style = {{display: loading[5] ? 'none' : ''}}
+                        onLoad={() => handleImageLoad(5)} 
+                        alt="" />
 
                         
                     </div>
@@ -127,8 +184,13 @@ function MostSearched() {
 
                     <div className="most-searched-container">
                     <div className="img-container searched" >
-                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[6].image_url} alt="" />
-
+                        {loading[6] && (<div className="loading-wrapper">
+                            <CircularProgress size = {80}/>
+                        </div>)}
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[6].image_url} 
+                        style = {{display: loading[6] ? 'none' : ''}}
+                        onLoad={() => handleImageLoad(6)} 
+                        alt="" />
                         
                     </div>
                         <div className="most-searched-text-container">
@@ -140,8 +202,13 @@ function MostSearched() {
 
                     <div className="most-searched-container">
                     <div className="img-container searched" >
-                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[7].image_url} alt="" />
-
+                        {loading[7] && (<div className="loading-wrapper">
+                            <CircularProgress size = {80}/>
+                        </div>)}
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[7].image_url} 
+                        style = {{display: loading[7] ? 'none' : ''}}
+                        onLoad={() => handleImageLoad(7)} 
+                        alt="" />
                         
                     </div>
                         <div className="most-searched-text-container">
@@ -153,8 +220,13 @@ function MostSearched() {
 
                     <div className="most-searched-container">
                     <div className="img-container searched">
-                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[8].image_url} alt="" />
-
+                        {loading[8] && (<div className="loading-wrapper">
+                            <CircularProgress size = {80}/>
+                        </div>)}
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[8].image_url} 
+                        style = {{display: loading[8] ? 'none' : ''}}
+                        onLoad={() => handleImageLoad(8)} 
+                        alt="" />
                         
                     </div>
                         <div className="most-searched-text-container">
@@ -166,8 +238,13 @@ function MostSearched() {
 
                     <div className="most-searched-container">
                     <div className="img-container searched">
-                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[9].image_url} alt="" />
-
+                        {loading[9] && (<div className="loading-wrapper">
+                            <CircularProgress size = {80}/>
+                        </div>)}
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[9].image_url} 
+                        style = {{display: loading[9] ? 'none' : ''}}
+                        onLoad={() => handleImageLoad(9)} 
+                        alt="" />
                         
                     </div>
                         <div className="most-searched-text-container">
