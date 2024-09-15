@@ -56,10 +56,10 @@ function SearchBar() {
   }, []);
 
   const handleOptionSelect = (event, selectedOption) => {
-    const url = `https://cat-wiki-api-8m0t.onrender.com/incrementSearchCount/${encodeURIComponent(selectedOption)}`;
+    const url = `https://cat-wiki-backend-d4sb.onrender.com/incrementSearchCount/${encodeURIComponent(selectedOption)}`;
     const localCat = `http://localhost:3000/incrementSearchCount/${encodeURIComponent(selectedOption)}`;
     if (selectedOption) {
-      axios.put(localCat)
+      axios.put(url)
         .then(response => {
           // Si la solicitud fue exitosa, redirige a la página del gato
           navigate(`/cat/${encodeURIComponent(selectedOption)}`);
