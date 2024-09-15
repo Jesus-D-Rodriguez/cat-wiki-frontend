@@ -16,11 +16,11 @@ function SearchBar() {
   };
 
   useEffect(() => {
-    const url = 'https://cat-wiki-api-8m0t.onrender.com/';
+    const url = 'https://cat-wiki-backend-d4sb.onrender.com/';
     const local = 'http://localhost:3000/';
     
   
-      axios.get(local)
+      axios.get(url)
       .then(response => {
         //console.log("respuestas ", response);
         

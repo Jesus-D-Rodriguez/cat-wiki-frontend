@@ -29,7 +29,7 @@ function CatPage (props) {
 
     useEffect(() => {
 
-        const url = `https://cat-wiki-api-8m0t.onrender.com/cat/${catName}`;
+        const url = `https://cat-wiki-backend-d4sb.onrender.com/cat/${catName}`;
 
         const local = `http://localhost:3000/cat/${catName}`;
 
@@ -48,7 +48,7 @@ function CatPage (props) {
 
   useEffect(() => {
     
-    axios.get(`https://cat-wiki-api-8m0t.onrender.com/cat/${catName}`)
+    axios.get(`https://cat-wiki-backend-d4sb.onrender.com/cat/${catName}`)
     .then(response => {
       setCatData(response.data);
     })
