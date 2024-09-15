@@ -8,6 +8,7 @@
     display: grid;
     grid-template-rows: 58% 42%;
     min-height: 3078px;
+    background-color: white;
 }
 
 .container-1 {

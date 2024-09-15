@@ -105,8 +105,8 @@ function CatPage (props) {
                 </div>
                 <div> 
                     <div className="container-1-traits">
-                        <h2>{catData.name}</h2>
-                        <p>{catData.description}</p>
+                        <h2 style={{color: '#213547'}}>{catData.name}</h2>
+                        <p style={{color: '#213547'}}>{catData.description}</p>
                        
                        <div><p className="traits"> Temperament: </p> &nbsp; <p className="trait">{catData.temperament}</p></div>
                         <div><p className="traits">Origin:</p> &nbsp; <p className="trait">{catData.origin}</p></div>
@@ -128,7 +128,7 @@ function CatPage (props) {
         <div className="container-2" id="container-2-cat-page"> 
             <div className="container-2-other-photos">
                 <div className="container-2-text-row">
-                    <h2>Other photos</h2>
+                    <h2 style={{color: '#213547'}}>Other photos</h2>
                 </div>
                 
                 <div className="container-2-photos-row" id="photos-1">

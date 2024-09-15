@@ -62,7 +62,7 @@ function MostSearched() {
                 <div>
                     <div>   
 
-                    <h1 style={{textAlign:'left', fontWeight:'700', marginTop:'0'}}>Top 10 most searched breeds</h1>
+                    <h1 style={{textAlign:'left', fontWeight:'700', marginTop:'0', color: '#213547'}}>Top 10 most searched breeds</h1>
                     </div>
                     
                     <div className="m-searched-container">
@@ -79,8 +79,8 @@ function MostSearched() {
                         onLoad={() => handleImageLoad(0)}  />
                     </div>
                         <div className="most-searched-text-container">
-                           <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[0].name}`}> <h2>1. {mostSearchedCats.length > 0 && mostSearchedCats[0].name}</h2> </a>
-                            <p> {mostSearchedCats.length > 0 && mostSearchedCats[0].description} </p>
+                           <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[0].name}`}> <h2 style={{color: '#213547'}}>1. {mostSearchedCats.length > 0 && mostSearchedCats[0].name}</h2> </a>
+                            <p style={{color: '#213547'}}> {mostSearchedCats.length > 0 && mostSearchedCats[0].description} </p>
                         </div>
                     </div>
 
@@ -98,8 +98,8 @@ function MostSearched() {
                         
                     </div>
                         <div className="most-searched-text-container">
-                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[1].name}`}> <h2>2. {mostSearchedCats.length > 0 && mostSearchedCats[1].name}</h2> </a>
-                            <p> {mostSearchedCats.length > 0 && mostSearchedCats[1].description} </p>
+                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[1].name}`}> <h2 style={{color: '#213547'}}>2. {mostSearchedCats.length > 0 && mostSearchedCats[1].name}</h2> </a>
+                            <p style={{color: '#213547'}}> {mostSearchedCats.length > 0 && mostSearchedCats[1].description} </p>
                         </div>
                     </div>
 
@@ -118,8 +118,8 @@ function MostSearched() {
                         
                     </div>
                         <div className="most-searched-text-container">
-                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[2].name}`}> <h2>3. {mostSearchedCats.length > 0 && mostSearchedCats[2].name}</h2> </a>
-                            <p> {mostSearchedCats.length > 0 && mostSearchedCats[2].description} </p>
+                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[2].name}`}> <h2 style={{color: '#213547'}}>3. {mostSearchedCats.length > 0 && mostSearchedCats[2].name}</h2> </a>
+                            <p style={{color: '#213547'}}> {mostSearchedCats.length > 0 && mostSearchedCats[2].description} </p>
                         </div>
                     </div>
 
@@ -138,8 +138,8 @@ function MostSearched() {
                         
                     </div>
                         <div className="most-searched-text-container">
-                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[3].name}`}> <h2>4. {mostSearchedCats.length > 0 && mostSearchedCats[3].name}</h2> </a>
-                            <p> {mostSearchedCats.length > 0 && mostSearchedCats[3].description} </p>
+                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[3].name}`}> <h2 style={{color: '#213547'}}>4. {mostSearchedCats.length > 0 && mostSearchedCats[3].name}</h2> </a>
+                            <p style={{color: '#213547'}}> {mostSearchedCats.length > 0 && mostSearchedCats[3].description} </p>
                         </div>
                     </div>
 
@@ -157,8 +157,8 @@ function MostSearched() {
                         
                     </div>
                         <div className="most-searched-text-container">
-                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[4].name}`}> <h2>5. {mostSearchedCats.length > 0 && mostSearchedCats[4].name}</h2> </a>
-                            <p> {mostSearchedCats.length > 0 && mostSearchedCats[4].description}  </p>
+                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[4].name}`}> <h2 style={{color: '#213547'}}>5. {mostSearchedCats.length > 0 && mostSearchedCats[4].name}</h2> </a>
+                            <p style={{color: '#213547'}}> {mostSearchedCats.length > 0 && mostSearchedCats[4].description}  </p>
                         </div>
                     </div>
 
@@ -176,8 +176,8 @@ function MostSearched() {
                         
                     </div>
                         <div className="most-searched-text-container">
-                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[5].name}`}> <h2>6. {mostSearchedCats.length > 0 && mostSearchedCats[5].name}</h2> </a>
-                            <p> {mostSearchedCats.length > 0 && mostSearchedCats[5].description}  </p>
+                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[5].name}`}> <h2 style={{color: '#213547'}}>6. {mostSearchedCats.length > 0 && mostSearchedCats[5].name}</h2> </a>
+                            <p style={{color: '#213547'}}> {mostSearchedCats.length > 0 && mostSearchedCats[5].description}  </p>
                         </div>
                     </div>
 
@@ -194,8 +194,8 @@ function MostSearched() {
                         
                     </div>
                         <div className="most-searched-text-container">
-                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[6].name}`}> <h2>7. {mostSearchedCats.length > 0 && mostSearchedCats[6].name}</h2> </a>
-                            <p> {mostSearchedCats.length > 0 && mostSearchedCats[6].description} </p>
+                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[6].name}`}> <h2 style={{color: '#213547'}}>7. {mostSearchedCats.length > 0 && mostSearchedCats[6].name}</h2> </a>
+                            <p style={{color: '#213547'}}> {mostSearchedCats.length > 0 && mostSearchedCats[6].description} </p>
                         </div>
                     </div>
 
@@ -212,8 +212,8 @@ function MostSearched() {
                         
                     </div>
                         <div className="most-searched-text-container">
-                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[7].name}`}> <h2>8. {mostSearchedCats.length > 0 && mostSearchedCats[7].name}</h2> </a>
-                            <p> {mostSearchedCats.length > 0 && mostSearchedCats[7].description}  </p>
+                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[7].name}`}> <h2 style={{color: '#213547'}}>8. {mostSearchedCats.length > 0 && mostSearchedCats[7].name}</h2> </a>
+                            <p style={{color: '#213547'}}> {mostSearchedCats.length > 0 && mostSearchedCats[7].description}  </p>
                         </div>
                     </div>
 
@@ -230,8 +230,8 @@ function MostSearched() {
                         
                     </div>
                         <div className="most-searched-text-container">
-                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[8].name}`}> <h2>9. {mostSearchedCats.length > 0 && mostSearchedCats[8].name}</h2> </a>
-                            <p> {mostSearchedCats.length > 0 && mostSearchedCats[8].description}</p>
+                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[8].name}`}> <h2 style={{color: '#213547'}}>9. {mostSearchedCats.length > 0 && mostSearchedCats[8].name}</h2> </a>
+                            <p style={{color: '#213547'}}> {mostSearchedCats.length > 0 && mostSearchedCats[8].description}</p>
                         </div>
                     </div>
 
@@ -248,8 +248,8 @@ function MostSearched() {
                         
                     </div>
                         <div className="most-searched-text-container">
-                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[9].name}`}> <h2>10. {mostSearchedCats.length > 0 && mostSearchedCats[9].name}</h2> </a>
-                            <p> {mostSearchedCats.length > 0 && mostSearchedCats[9].description}</p>
+                        <a href={`/#/cat/${mostSearchedCats.length > 0 && mostSearchedCats[9].name}`}> <h2 style={{color: '#213547'}}>10. {mostSearchedCats.length > 0 && mostSearchedCats[9].name}</h2> </a>
+                            <p style={{color: '#213547'}}> {mostSearchedCats.length > 0 && mostSearchedCats[9].description}</p>
                         </div>
                     </div>
                     </div>
