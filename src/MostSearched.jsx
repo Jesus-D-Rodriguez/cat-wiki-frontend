@@ -21,8 +21,10 @@ function MostSearched() {
     }, []) 
     
     const [mostSearchedCats, setMostSearchedCats] = useState([])
+    const local = 'http://localhost:3000/most_searched';
+    const url = 'https://cat-wiki-api-8m0t.onrender.com/most_searched'
     useEffect(()=>{
-        axios.get('https://cat-wiki-api-8m0t.onrender.com/most_searched'). 
+        axios.get(local). 
         then(response => {setMostSearchedCats(response.data);
             console.log("Most searched  most searched", response.data);
         })
